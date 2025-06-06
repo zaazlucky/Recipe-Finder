@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading text-style1">
+        <div class="Recipe text-style font-size">
+            <h1>Recipe Finder</h1>
+        </div>
+        <form id="search-form" class="Button">
+            <input class="text-area text-style1" type="text" id="search-input" placeholder="Search by name(e.g.,'chicken')">
+            <button class="button1 text-style1" type="submit" id="search-button">Search</button>
+        </form>
+        <div class="random text-style1">
+            <button id="random-button" class="random-button">
+                Get Random Recipe
+            </button>
+        </div>
+        <div class="message"id="message-area">
+            <p>Search for a recipe or get a random one!</p>
+        </div>
+    </div>
+    <div class="recipe-finder-container">
+        <div class="results-grid text-style1" id="results-grid">
+            <!-- <div class="recipe-item">
+                <img src="https://www.themealdb.com/images/media/meals/vrspxv1511722107.jpg" alt="carrot-cake">
+                <h3>Carrot Cake</h3>
+            </div>
+            <div class="recipe-item">
+                <img src="https://www.themealdb.com/images/media/meals/vrspxv1511722107.jpg" alt="carrot-cake">
+                <h3>Carrot Cake</h3>
+            </div>
+            <div class="recipe-item">
+                <img src="https://www.themealdb.com/images/media/meals/vrspxv1511722107.jpg" alt="carrot-cake">
+                <h3>Carrot Cake</h3>
+            </div> -->
+        </div>
+        <div class="modal-container hidden" id="recipe-modal">
+            <div class="modal-content text-style1">
+                <button id="modal-close-btn" class="modal-close-btn">+</button>
+                <div id="recipe-details-content">
+                    <!--Details will be loded from js-->
+                    <h2>Carrot Cake</h2>
+                    <img src="https://www.themealdb.com/images/media/meals/vrspxv1511722107.jpg" alt="carrot-cake">
+                    <h3>Category:Dessert</h3>
+                    <h3>Category:Dessert</h3>
+                    <h3>Category:Dessert</h3>
+
+                    <ul>
+                        <li>450ml Vegetable Oil</li>
+                        <li>450ml Vegetable Oil</li>
+                        <li>450ml Vegetable Oil</li>
+                    </ul>
+
+                    <h3>Instructions</h3>
+                    <P>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam facilis dicta tenetur, numquam voluptate itaque aliquid modi vitae, sed quam magnam doloremque esse inventore officiis, architecto quia vel sequi enim pariatur. Quae, distinctio impedit corrupti veritatis tempora quaerat repellat beatae delectus quam! Possimus quod nisi doloremque odit inventore. Itaque, quae.
+                    </P>
+                    <h3>Video Recipe</h3>
+                    <div class="video-wrapper">
+                        <a href="https://www.youtube.com/watch?v=HNOgX9b5o8M" target="_blank">Watch On YouTube</a>
+                    </div>
+                    <div class="source-wrapper">
+                        <a href="#" target="_blank">View Original Source</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
